@@ -1,9 +1,9 @@
 <?php
 /*******************************************************************************
-* Invoice Management System                                               *
+* Servitodo S. R.L. Invoice Management System                                  *
 *                                                                              *
 * Version: 1.0	                                                               *
-* Developer:  Abhishek Raj                                    				   *
+* Developer: Futura Co. Gabriel Mora / Eduardo Maldonado                       *
 *******************************************************************************/
 
 include('header.php');
