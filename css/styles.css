@@ -7,7 +7,7 @@
 
 body {
   padding: 0;
-  background-color: #00a65a;
+  background-color: #6F8FB7;
 }
 
 .btn-primary {
@@ -21,8 +21,8 @@ body {
 }
 
 .btn-danger {
-  background-color: #f44336;
-  border-color: #f44336;
+  background-color: #B7976F;
+  border-color: #B7976F;
 }
 
 .btn-danger:hover {
