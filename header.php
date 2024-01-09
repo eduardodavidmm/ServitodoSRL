@@ -10,7 +10,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Invoice Management System</title>
+  <title>Servitodo S. de R.L.</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
  
@@ -54,9 +54,9 @@
      <!--Logo -->
     <a href="" class="logo">
        <!--mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>IN</b>MS</span>
+      <span class="logo-mini"><b>ST</b>SRL</span>
        <!--logo for regular state and mobile devices -->
-      <span style="text-decoration:none;" class="logo-lg"><b>Invoice</b> System</span>
+      <span style="text-decoration:none;" class="logo-lg"><b>Servitodo</b> ERP</span>
     </a>
 
     <!-- Header Navbar -->
@@ -74,7 +74,7 @@
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <!-- The user image in the navbar-->
-              <img src="https://pcrt.crab.org/images/default-user.png" class="user-image" alt="User Image">
+              <!-- img src="https://pcrt.crab.org/images/default-user.png" class="user-image" alt="User Image"-->
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
               <span class="hidden-xs"><?php echo $_SESSION['login_username'];?></span>
             </a>
@@ -108,52 +108,52 @@
         </li>
         <!-- Menu 1 -->
          <li class="treeview">
-          <a href="#"><i class="fa fa-file-text"></i> <span>Invoices</span>
+          <a href="#"><i class="fa fa-file-text"></i> <span>Facturación</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="invoice-create.php"><i class="fa fa-plus"></i>Create Invoice</a></li>
-            <li><a href="invoice-list.php"><i class="fa fa-cog"></i>Manage Invoices</a></li>
-            <li><a href="#" class="download-csv"><i class="fa fa-download"></i>Download CSV</a></li>
+            <li><a href="invoice-create.php"><i class="fa fa-plus"></i>Crear Factura</a></li>
+            <li><a href="invoice-list.php"><i class="fa fa-cog"></i>Administración de Facturas</a></li>
+            <li><a href="#" class="download-csv"><i class="fa fa-download"></i>Descargar CSV</a></li>
           </ul>
         </li>
         <!-- Menu 2 -->
          <li class="treeview">
-          <a href="#"><i class="fa fa-archive"></i><span>Products</span>
+          <a href="#"><i class="fa fa-archive"></i><span>Productos</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="product-add.php"><i class="fa fa-plus"></i>Add Products</a></li>
-            <li><a href="product-list.php"><i class="fa fa-cog"></i>Manage Products</a></li>
+            <li><a href="product-add.php"><i class="fa fa-plus"></i>Añadir Producto</a></li>
+            <li><a href="product-list.php"><i class="fa fa-cog"></i>Administrar Prodcutos</a></li>
           </ul>
         </li>
         <!-- Menu 3 -->
         <li class="treeview">
-          <a href="#"><i class="fa fa-users"></i><span>Customers</span>
+          <a href="#"><i class="fa fa-users"></i><span>Clientes</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="customer-add.php"><i class="fa fa-user-plus"></i>Add Customer</a></li>
-            <li><a href="customer-list.php"><i class="fa fa-cog"></i>Manage Customers</a></li>
+            <li><a href="customer-add.php"><i class="fa fa-user-plus"></i>Añadir Cliente</a></li>
+            <li><a href="customer-list.php"><i class="fa fa-cog"></i>Administrar Clientes</a></li>
           </ul>
         </li>
         
         <!-- Menu 4 -->
         <li class="treeview">
-          <a href="#"><i class="fa fa-user"></i><span>System Users</span>
+          <a href="#"><i class="fa fa-user"></i><span>Usuarios</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="user-add.php"><i class="fa fa-plus"></i>Add User</a></li>
-            <li><a href="user-list.php"><i class="fa fa-cog"></i>Manage Users</a></li>
+            <li><a href="user-add.php"><i class="fa fa-plus"></i>Añadir Usuario</a></li>
+            <li><a href="user-list.php"><i class="fa fa-cog"></i>Administrar Usuarios</a></li>
           </ul>
         </li>
         
