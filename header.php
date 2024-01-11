@@ -54,7 +54,7 @@
      <!--Logo -->
     <a href="" class="logo">
        <!--mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>ST</b>SRL</span>
+      <span class="logo-mini"><b>ST</b></span>
        <!--logo for regular state and mobile devices -->
       <span style="text-decoration:none;" class="logo-lg"><b>Servitodo</b> ERP</span>
     </a>
@@ -80,7 +80,7 @@
             </a>
             <ul class="dropdown-menu">
              <!-- Drop down list-->
-              <li><a href="logout.php" class="btn btn-default btn-flat">Log out</a></li>
+              <li><a href="logout.php" class="btn btn-default btn-flat">Cerrar sesión</a></li>
             </ul>
           </li>
         </ul>
@@ -101,21 +101,21 @@
         <li class="header">MENU</li>
         <!-- Menu 0.1 -->
         <li class="treeview">
-          <a href="dashboard.php"><i class="fa fa-tachometer"></i> <span>Dashboard</span>
+          <a href="dashboard.php"><i class="fa fa-tachometer"></i> <span>Resumen</span>
             
           </a>
           
         </li>
         <!-- Menu 1 -->
          <li class="treeview">
-          <a href="#"><i class="fa fa-file-text"></i> <span>Facturación</span>
+          <a href="#"><i class="fa fa-file-text"></i> <span>Órdenes de trabajo</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="invoice-create.php"><i class="fa fa-plus"></i>Crear Factura</a></li>
-            <li><a href="invoice-list.php"><i class="fa fa-cog"></i>Administración de Facturas</a></li>
+            <li><a href="invoice-create.php"><i class="fa fa-plus"></i>Crear OT</a></li>
+            <li><a href="invoice-list.php"><i class="fa fa-cog"></i>Administración de OTs</a></li>
             <li><a href="#" class="download-csv"><i class="fa fa-download"></i>Descargar CSV</a></li>
           </ul>
         </li>
@@ -128,7 +128,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="product-add.php"><i class="fa fa-plus"></i>Añadir Producto</a></li>
-            <li><a href="product-list.php"><i class="fa fa-cog"></i>Administrar Prodcutos</a></li>
+            <li><a href="product-list.php"><i class="fa fa-cog"></i>Administrar Productos</a></li>
           </ul>
         </li>
         <!-- Menu 3 -->

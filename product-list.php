@@ -5,7 +5,7 @@ include('functions.php');
 
 ?>
 
-<h1>Product List</h1>
+<h1>Listado de Productos</h1>
 <hr>
 
 <div class="row">
@@ -19,7 +19,7 @@ include('functions.php');
 	
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h4>Product Information</h4>
+				<h4>Información de productos</h4>
 			</div>
 			<div class="panel-body form-group form-group-sm">
 				<?php getProducts(); ?>

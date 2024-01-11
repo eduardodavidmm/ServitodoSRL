@@ -6,7 +6,7 @@ include('functions.php');
 
 ?>
 
-<h1>Customer List</h1>
+<h1>Lista de Clientes</h1>
 <hr>
 
 <div class="row">
@@ -19,7 +19,7 @@ include('functions.php');
 	
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h4>Customers</h4>
+				<h4>Clientes</h4>
 			</div>
 			<div class="panel-body form-group form-group-sm">
 				<?php getCustomers(); ?>

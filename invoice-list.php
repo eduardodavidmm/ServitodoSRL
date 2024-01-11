@@ -6,7 +6,7 @@ include('functions.php');
 
 ?>
 
-<h1>Invoice List</h1>
+<h1>Órdenes de trabajo</h1>
 <hr>
 
 <div class="row">
@@ -20,7 +20,7 @@ include('functions.php');
 	
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h4>Manage Invoices</h4>
+				<h4>Administración de facturas</h4>
 			</div>
 			<div class="panel-body form-group form-group-sm">
 				<?php getInvoices(); ?>
@@ -34,10 +34,11 @@ include('functions.php');
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Delete Invoice</h4>
+        <h4 class="modal-title">Eliminar OT</h4>
       </div>
       <div class="modal-body">
-        <p>Are you sure you want to delete this invoice?</p>
+        <p>Está seguro que desea eliminar el registro?</p>
+		<p><strong>Esta acción no se puede deshacer.</strong></p>
       </div>
       <div class="modal-footer">
         <button type="button" data-dismiss="modal" class="btn btn-primary" id="delete">Delete</button>

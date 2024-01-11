@@ -64,7 +64,7 @@ $mysqli->close();
 
 ?>
 
-		<h1>Edit Invoice (<?php echo $getID; ?>)</h1>
+		<h1>Editar Orden de Trabajo (<?php echo $getID; ?>)</h1>
 		<hr>
 
 		<div id="response" class="alert alert-success" style="display:none;">
@@ -91,12 +91,12 @@ $mysqli->close();
 				<div class="col-xs-7 text-right">
 					<div class="row">
 						<div class="col-xs-6">
-							<h1>INVOICE</h1>
+							<h1>ORDEN DE TRABAJO</h1>
 						</div>
 						<div class="col-xs-3">
 							<select name="invoice_type" id="invoice_type" class="form-control">
-								<option value="invoice" <?php if($invoice_type === 'invoice'){?>selected<?php } ?>>Invoice</option>
-								<option value="quote" <?php if($invoice_type === 'quote'){?>selected<?php } ?>>Quote</option>
+								<option value="invoice" <?php if($invoice_type === 'invoice'){?>selected<?php } ?>>Factura</option>
+								<option value="quote" <?php if($invoice_type === 'quote'){?>selected<?php } ?>>Cotización</option>
 								<option value="receipt" <?php if($invoice_type === 'receipt'){?>selected<?php } ?>>Receipt</option>
 							</select>
 						</div>

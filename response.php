@@ -48,13 +48,13 @@ if ($action == 'email_invoice'){
 		 //if unable to create new record
 	    echo json_encode(array(
 	    	'status' => 'Error',
-	    	//'message'=> 'There has been an error, please try again.'
-	    	'message' => 'There has been an error, please try again.<pre>'.$mail->ErrorInfo.'</pre>'
+	    	//'message'=> 'Ha ocurrido un error, intente de nuevo.'
+	    	'message' => 'Ha ocurrido un error, intente de nuevo.<pre>'.$mail->ErrorInfo.'</pre>'
 	    ));
 	} else {
 	   echo json_encode(array(
-			'status' => 'Success',
-			'message'=> 'Invoice has been successfully send to the customer'
+			'status' => 'Éxito',
+			'message'=> 'La Orden de trabajo ha sido enviada.'
 		));
 	}
 
@@ -101,7 +101,7 @@ if ($action == 'download_csv'){
     //if saving success
     if ($result_column_data = mysqli_query($mysqli, $query_table_columns_data)) {
 		echo json_encode(array(
-			'status' => 'Success',
+			'status' => 'Éxito',
 			'message'=> 'CSV has been generated and is available in the /downloads folder for future reference, you can download by <a href="downloads/'.$file_name.'">clicking here</a>.'
 		));
 
@@ -109,8 +109,8 @@ if ($action == 'download_csv'){
 	    //if unable to create new record
 	    echo json_encode(array(
 	    	'status' => 'Error',
-	    	//'message'=> 'There has been an error, please try again.'
-	    	'message' => 'There has been an error, please try again.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
+	    	//'message'=> 'Ha ocurrido un error, intente de nuevo.'
+	    	'message' => 'Ha ocurrido un error, intente de nuevo.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
 	    ));
 	}
 
@@ -192,16 +192,16 @@ if ($action == 'create_customer'){
 	if($stmt->execute()){
 		//if saving success
 		echo json_encode(array(
-			'status' => 'Success',
-			'message' => 'Customer has been created successfully!'
+			'status' => 'Éxito',
+			'message' => '¡El cliente ha sido creado exitosamente!'
 		));
 	} else {
 		// if unable to create invoice
 		echo json_encode(array(
 			'status' => 'Error',
-			'message' => 'There has been an error, please try again.'
+			'message' => 'Ha ocurrido un error, intente de nuevo.'
 			// debug
-			//'message' => 'There has been an error, please try again.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
+			//'message' => 'Ha ocurrido un error, intente de nuevo.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
 		));
 	}
 
@@ -346,8 +346,8 @@ if ($action == 'create_invoice'){
 	if($mysqli -> multi_query($query)){
 		//if saving success
 		echo json_encode(array(
-			'status' => 'Success',
-			'message' => 'Invoice has been created successfully!'
+			'status' => 'Éxito',
+			'message' => '¡La Orden de trabajo se ha creado exitosamente!'
 		));
 
 		//Set default date timezone
@@ -423,9 +423,9 @@ if ($action == 'create_invoice'){
 		// if unable to create invoice
 		echo json_encode(array(
 			'status' => 'Error',
-			'message' => 'There has been an error, please try again.'
+			'message' => 'Ha ocurrido un error, intente de nuevo.'
 			// debug
-			//'message' => 'There has been an error, please try again.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
+			//'message' => 'Ha ocurrido un error, intente de nuevo.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
 		));
 	}
 
@@ -462,8 +462,8 @@ if($action == 'delete_invoice') {
 	    //if unable to create new record
 	    echo json_encode(array(
 	    	'status' => 'Error',
-	    	//'message'=> 'There has been an error, please try again.'
-	    	'message' => 'There has been an error, please try again.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
+	    	//'message'=> 'Ha ocurrido un error, intente de nuevo.'
+	    	'message' => 'Ha ocurrido un error, intente de nuevo.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
 	    ));
 	}
 
@@ -539,16 +539,16 @@ if($action == 'update_customer') {
 	if($stmt->execute()){
 	    //if saving success
 		echo json_encode(array(
-			'status' => 'Success',
-			'message'=> 'Customer has been updated successfully!'
+			'status' => 'Éxito',
+			'message'=> '¡El cliente ha sido actualizado con éxito!'
 		));
 
 	} else {
 	    //if unable to create new record
 	    echo json_encode(array(
 	    	'status' => 'Error',
-	    	//'message'=> 'There has been an error, please try again.'
-	    	'message' => 'There has been an error, please try again.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
+	    	//'message'=> 'Ha ocurrido un error, intente de nuevo.'
+	    	'message' => 'Ha ocurrido un error, intente de nuevo.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
 	    ));
 	}
 
@@ -595,16 +595,16 @@ if($action == 'update_product') {
 	if($stmt->execute()){
 	    //if saving success
 		echo json_encode(array(
-			'status' => 'Success',
-			'message'=> 'Product has been updated successfully!'
+			'status' => 'Éxito',
+			'message'=> '¡El producto se ha actualizado exitosamente!'
 		));
 
 	} else {
 	    //if unable to create new record
 	    echo json_encode(array(
 	    	'status' => 'Error',
-	    	//'message'=> 'There has been an error, please try again.'
-	    	'message' => 'There has been an error, please try again.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
+	    	//'message'=> 'Ha ocurrido un error, intente de nuevo.'
+	    	'message' => 'Ha ocurrido un error, intente de nuevo.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
 	    ));
 	}
 
@@ -841,8 +841,8 @@ if($action == 'update_invoice') {
 	    //if unable to create new record
 	    echo json_encode(array(
 	    	'status' => 'Error',
-	    	//'message'=> 'There has been an error, please try again.'
-	    	'message' => 'There has been an error, please try again.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
+	    	//'message'=> 'Ha ocurrido un error, intente de nuevo.'
+	    	'message' => 'Ha ocurrido un error, intente de nuevo.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
 	    ));
 	}
 
@@ -877,16 +877,16 @@ if($action == 'delete_product') {
 	if($stmt->execute()){
 	    //if saving success
 		echo json_encode(array(
-			'status' => 'Success',
-			'message'=> 'Product has been deleted successfully!'
+			'status' => 'Éxito',
+			'message'=> 'El producto se ha eliminado correctamente!'
 		));
 
 	} else {
 	    //if unable to create new record
 	    echo json_encode(array(
 	    	'status' => 'Error',
-	    	//'message'=> 'There has been an error, please try again.'
-	    	'message' => 'There has been an error, please try again.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
+	    	//'message'=> 'Ha ocurrido un error, intente de nuevo.'
+	    	'message' => 'Ha ocurrido un error, intente de nuevo.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
 	    ));
 	}
 
@@ -933,7 +933,6 @@ if($action == 'login') {
     } else {
     	echo json_encode(array(
 	    	'status' => 'Error',
-	    	//'message'=> 'There has been an error, please try again.'
 	    	'message' => 'Login incorrect, does not exist or simply a problem! Try again!'
 	    ));
     }
@@ -974,16 +973,16 @@ if($action == 'add_product') {
 	if($stmt->execute()){
 	    //if saving success
 		echo json_encode(array(
-			'status' => 'Success',
-			'message'=> 'Product has been added successfully!'
+			'status' => 'Éxito',
+			'message'=> '¡El producto se ha agregado exitosamente!'
 		));
 
 	} else {
 	    //if unable to create new record
 	    echo json_encode(array(
 	    	'status' => 'Error',
-	    	//'message'=> 'There has been an error, please try again.'
-	    	'message' => 'There has been an error, please try again.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
+	    	//'message'=> 'Ha ocurrido un error, intente de nuevo.'
+	    	'message' => 'Ha ocurrido un error, intente de nuevo.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
 	    ));
 	}
 
@@ -1041,8 +1040,8 @@ if($action == 'add_user') {
 	    //if unable to create new record
 	    echo json_encode(array(
 	    	'status' => 'Error',
-	    	//'message'=> 'There has been an error, please try again.'
-	    	'message' => 'There has been an error, please try again.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
+	    	//'message'=> 'Ha ocurrido un error, intente de nuevo.'
+	    	'message' => 'Ha ocurrido un error, intente de nuevo.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
 	    ));
 	}
 
@@ -1120,8 +1119,8 @@ if($action == 'update_user') {
 	    //if unable to create new record
 	    echo json_encode(array(
 	    	'status' => 'Error',
-	    	//'message'=> 'There has been an error, please try again.'
-	    	'message' => 'There has been an error, please try again.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
+	    	//'message'=> 'Ha ocurrido un error, intente de nuevo.'
+	    	'message' => 'Ha ocurrido un error, intente de nuevo.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
 	    ));
 	}
 
@@ -1163,8 +1162,8 @@ if($action == 'delete_user') {
 	    //if unable to create new record
 	    echo json_encode(array(
 	    	'status' => 'Error',
-	    	//'message'=> 'There has been an error, please try again.'
-	    	'message' => 'There has been an error, please try again.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
+	    	//'message'=> 'Ha ocurrido un error, intente de nuevo.'
+	    	'message' => 'Ha ocurrido un error, intente de nuevo.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
 	    ));
 	}
 
@@ -1199,15 +1198,15 @@ if($action == 'delete_customer') {
 	    //if saving success
 		echo json_encode(array(
 			'status' => 'Success',
-			'message'=> 'Customer has been deleted successfully!'
+			'message'=> '¡El cliente ha sido eliminado exitosamente!'
 		));
 
 	} else {
 	    //if unable to create new record
 	    echo json_encode(array(
 	    	'status' => 'Error',
-	    	//'message'=> 'There has been an error, please try again.'
-	    	'message' => 'There has been an error, please try again.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
+	    	//'message'=> 'Ha ocurrido un error, intente de nuevo.'
+	    	'message' => 'Ha ocurrido un error, intente de nuevo.<pre>'.$mysqli->error.'</pre><pre>'.$query.'</pre>'
 	    ));
 	}
 

@@ -31,12 +31,12 @@ define('EMAIL_BODY_QUOTE', 'Quote default body'); // Invoice email body
 define('EMAIL_BODY_RECEIPT', 'Receipt default body'); // Invoice email body
 
 // OTHER SETTINFS
-define('INVOICE_PREFIX', 'MD'); // Prefix at start of invoice - leave empty '' for no prefix
+define('INVOICE_PREFIX', 'CAI'); // Prefix at start of invoice - leave empty '' for no prefix
 define('INVOICE_INITIAL_VALUE', '1'); // Initial invoice order number (start of increment)
 define('INVOICE_THEME', '#222222'); // Theme colour, this sets a colour theme for the PDF generate invoice
 define('TIMEZONE', 'America/Los_Angeles'); // Timezone - See for list of Timezone's http://php.net/manual/en/function.date-default-timezone-set.php
 define('DATE_FORMAT', 'DD/MM/YYYY'); // DD/MM/YYYY or MM/DD/YYYY
-define('CURRENCY', '$'); // Currency symbol
+define('CURRENCY', 'L'); // Currency symbol
 define('ENABLE_VAT', true); // Enable TAX/VAT
 define('VAT_INCLUDED', false); // Is VAT included or excluded?
 define('VAT_RATE', '10'); // This is the percentage value

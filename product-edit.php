@@ -33,7 +33,7 @@ $mysqli->close();
 
 ?>
 
-<h1>Edit Product</h1>
+<h1>Editar Productos</h1>
 <hr>
 
 <div id="response" class="alert alert-success" style="display:none;">
@@ -45,7 +45,7 @@ $mysqli->close();
 	<div class="col-xs-12">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h4>Editing Product (<?php echo $getID; ?>)</h4>
+				<h4>Editando producto (<?php echo $getID; ?>)</h4>
 			</div>
 			<div class="panel-body form-group form-group-sm">
 				<form method="post" id="update_product">
@@ -53,10 +53,10 @@ $mysqli->close();
 					<input type="hidden" name="id" value="<?php echo $getID; ?>">
 					<div class="row">
 						<div class="col-xs-4">
-							<input type="text" class="form-control required" name="product_name" placeholder="Enter product name" value="<?php echo $product_name; ?>">
+							<input type="text" class="form-control required" name="product_name" placeholder="Ingrese nombre del producto" value="<?php echo $product_name; ?>">
 						</div>
 						<div class="col-xs-4">
-							<input type="text" class="form-control required" name="product_desc" placeholder="Enter product description" value="<?php echo $product_desc; ?>">
+							<input type="text" class="form-control required" name="product_desc" placeholder="Ingrese descripcipon del producto" value="<?php echo $product_desc; ?>">
 						</div>
 						<div class="col-xs-4">
 							<div class="input-group">

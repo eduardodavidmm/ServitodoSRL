@@ -27,7 +27,7 @@ include_once("includes/config.php");
                 echo $sum;
                 ?></h3>
 
-              <p>Sales Amount</p>
+              <p>Total Ventas</p>
             </div>
             <div class="icon">
               <i class="ion ion-social-usd"></i>
@@ -48,7 +48,7 @@ include_once("includes/config.php");
                 echo "$query->num_rows";
                 ?></h3>
 
-              <p>Total Invoices</p>
+              <p>Total OTs</p>
             </div>
             <div class="icon">
               <i class="ion ion-printer"></i>
@@ -69,7 +69,7 @@ include_once("includes/config.php");
                 echo "$query->num_rows";
                 ?></h3>
 
-              <p>Pending Bills</p>
+              <p>OTs Pendientes</p>
             </div>
             <div class="icon">
               <i class="ion ion-load-a"></i>
@@ -90,7 +90,7 @@ include_once("includes/config.php");
                 echo $sum;
                 ?></h3>
 
-              <p>Due Amount</p>
+              <p>Resta</p>
             </div>
             <div class="icon">
               <i class="ion ion-alert-circled"></i>
@@ -117,7 +117,7 @@ include_once("includes/config.php");
                 echo "$query->num_rows";
                 ?></h3>
 
-              <p>Total Products</p>
+              <p>Total Productos</p>
             </div>
             <div class="icon">
               <i class="ion ion-social-dropbox"></i>
@@ -138,7 +138,7 @@ include_once("includes/config.php");
                 echo "$query->num_rows";
                 ?></h3>
 
-              <p>Total Customers</p>
+              <p>Clientes totales</p>
             </div>
             <div class="icon">
               <i class="ion ion-ios-people"></i>
@@ -159,7 +159,7 @@ include_once("includes/config.php");
                 echo "$query->num_rows";
                 ?></h3>
 
-              <p>Paid Bills</p>
+              <p>OTs Pagadas</p>
             </div>
             <div class="icon">
               <i class="ion ion-ios-paper"></i>

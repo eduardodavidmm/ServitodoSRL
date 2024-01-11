@@ -3,7 +3,7 @@ include('header.php');
 
 ?>
 
-<h2>Add Product</h2>
+<h2>Agregar Productos</h2>
 <hr>
 
 <div id="response" class="alert alert-success" style="display:none;">
@@ -15,7 +15,7 @@ include('header.php');
 	<div class="col-xs-12">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h4>Product Information</h4>
+				<h4>Información del producto</h4>
 			</div>
 			<div class="panel-body form-group form-group-sm">
 				<form method="post" id="add_product">
@@ -23,10 +23,10 @@ include('header.php');
 
 					<div class="row">
 						<div class="col-xs-4">
-							<input type="text" class="form-control required" name="product_name" placeholder="Enter Product Name">
+							<input type="text" class="form-control required" name="product_name" placeholder="Ingrese el nombre del producto">
 						</div>
 						<div class="col-xs-4">
-							<input type="text" class="form-control required" name="product_desc" placeholder="Enter Product Description">
+							<input type="text" class="form-control required" name="product_desc" placeholder="Ingrese la descripción del producto">
 						</div>
 						<div class="col-xs-4">
 							<div class="input-group">
@@ -37,7 +37,7 @@ include('header.php');
 					</div>
 					<div class="row">
 						<div class="col-xs-12 margin-top btn-group">
-							<input type="submit" id="action_add_product" class="btn btn-success float-right" value="Add Product" data-loading-text="Adding...">
+							<input type="submit" id="action_add_product" class="btn btn-success float-right" value="Añadir Producto" data-loading-text="Creando...">
 						</div>
 					</div>
 				</form>

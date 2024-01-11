@@ -30,13 +30,13 @@ function getInvoices() {
 
 		print '<table class="table table-striped table-hover table-bordered" id="data-table" cellspacing="0"><thead><tr>
 
-				<th>Invoice</th>
-				<th>Customer</th>
-				<th>Issue Date</th>
-				<th>Due Date</th>
-				<th>Type</th>
-				<th>Status</th>
-				<th>Actions</th>
+				<th>Factura</th>
+				<th>Cliente</th>
+				<th>Fecha de emisión</th>
+				<th>Fecha de entrega</th>
+				<th>Tipo</th>
+				<th>Estado</th>
+				<th>Acciones</th>
 
 			  </tr></thead><tbody>';
 
@@ -68,7 +68,7 @@ function getInvoices() {
 
 	} else {
 
-		echo "<p>There are no invoices to display.</p>";
+		echo "<p>No hay documentos por mostrar.</p>";
 
 	}
 
@@ -232,10 +232,11 @@ function getProducts() {
 
 		print '<table class="table table-striped table-hover table-bordered" id="data-table"><thead><tr>
 
-				<th>Product</th>
-				<th>Description</th>
-				<th>Price</th>
-				<th>Action</th>
+				<th>ID Producto</th>
+				<th>Producto</th>
+				<th>Descripción</th>
+				<th>Precio</th>
+				<th>Acción</th>
 
 			  </tr></thead><tbody>';
 
@@ -243,9 +244,10 @@ function getProducts() {
 
 		    print '
 			    <tr>
+					<td>'.$row["product_id"].'</td>
 					<td>'.$row["product_name"].'</td>
 				    <td>'.$row["product_desc"].'</td>
-				    <td>$'.$row["product_price"].'</td>
+				    <td>L '.$row["product_price"].'</td>
 				    <td><a href="product-edit.php?id='.$row["product_id"].'" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a> <a data-product-id="'.$row['product_id'].'" class="btn btn-danger btn-xs delete-product"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a></td>
 			    </tr>
 		    ';
@@ -255,7 +257,7 @@ function getProducts() {
 
 	} else {
 
-		echo "<p>There are no products to display.</p>";
+		echo "<p>No hay productos a mostrar.</p>";
 
 	}
 
@@ -344,10 +346,10 @@ function getCustomers() {
 
 		print '<table class="table table-striped table-hover table-bordered" id="data-table"><thead><tr>
 
-				<th>Name</th>
-				<th>Email</th>
-				<th>Phone</th>
-				<th>Action</th>
+				<th>Nombre</th>
+				<th>Correo electrónico</th>
+				<th>Teléfono</th>
+				<th>Acciones</th>
 
 			  </tr></thead><tbody>';
 
@@ -367,7 +369,7 @@ function getCustomers() {
 
 	} else {
 
-		echo "<p>There are no customers to display.</p>";
+		echo "<p>No hay clientes para mostrar.</p>";
 
 	}
 
