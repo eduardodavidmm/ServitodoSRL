@@ -347,7 +347,7 @@ if ($action == 'create_invoice'){
 		//if saving success
 		echo json_encode(array(
 			'status' => 'Éxito',
-			'message' => '¡La Orden de trabajo se ha creado exitosamente!'
+			'message' => '¡La Orden de Trabajo se ha creado exitosamente!'
 		));
 
 		//Set default date timezone
@@ -937,6 +937,7 @@ if($action == 'login') {
 	    ));
     }
 }
+
 
 // Adding new product
 if($action == 'add_product') {

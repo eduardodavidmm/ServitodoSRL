@@ -32,7 +32,7 @@ $mysqli->close();
 
 ?>
 
-<h1>Edit User</h1>
+<h1>Editar Usuario</h1>
 <hr>
 
 <div id="response" class="alert alert-success" style="display:none;">
@@ -44,7 +44,7 @@ $mysqli->close();
 	<div class="col-xs-12">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h4>Editing User (<?php echo $getID; ?>)</h4>
+				<h4>Editando Usuario (<?php echo $getID; ?>)</h4>
 			</div>
 			<div class="panel-body form-group form-group-sm">
 				<form method="post" id="update_user">
@@ -53,26 +53,26 @@ $mysqli->close();
 
 					<div class="row">
 						<div class="col-xs-4">
-							<input type="text" class="form-control margin-bottom required" name="name" placeholder="Name" value="<?php echo $name; ?>">
+							<input type="text" class="form-control margin-bottom required" name="name" placeholder="Nombre" value="<?php echo $name; ?>">
 						</div>
 						<div class="col-xs-4">
-							<input type="text" class="form-control margin-bottom required" name="username" placeholder="Enter username" value="<?php echo $username; ?>">
+							<input type="text" class="form-control margin-bottom required" name="username" placeholder="Ingrese usuario" value="<?php echo $username; ?>">
 						</div>
 						<div class="col-xs-4">
-							<input type="text" class="form-control margin-bottom required" name="email" placeholder="Enter user's email address" value="<?php echo $email; ?>">
+							<input type="text" class="form-control margin-bottom required" name="email" placeholder="Ingrese correo electrónico" value="<?php echo $email; ?>">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-xs-4">
-							<input type="text" class="form-control" name="phone" placeholder="Enter user's phone number" value="<?php echo $phone; ?>">
+							<input type="text" class="form-control" name="phone" placeholder="Teléfono" value="<?php echo $phone; ?>">
 						</div>
 						<div class="col-xs-4">
-							<input type="password" class="form-control required" name="password" id="password" placeholder="Enter user's new password, if left empty it won't change.">
+							<input type="password" class="form-control required" name="Contraseña" id="password" placeholder="Enter user's new password, if left empty it won't change.">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-xs-12 margin-top btn-group">
-							<input type="submit" id="action_update_user" class="btn btn-success float-right" value="Edit user" data-loading-text="Editing...">
+							<input type="submit" id="action_update_user" class="btn btn-success float-right" value="Editar Usuario" data-loading-text="Editing...">
 						</div>
 					</div>
 				</form>

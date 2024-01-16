@@ -67,7 +67,7 @@ $mysqli->close();
 					</div>
 					<div class="row">
 						<div class="col-xs-12 margin-top btn-group">
-							<input type="submit" id="action_update_product" class="btn btn-success float-right" value="Update product" data-loading-text="Updating...">
+							<input type="submit" id="action_update_product" class="btn btn-success float-right" value="Actualizar producto" data-loading-text="Actualizando...">
 						</div>
 					</div>
 				</form>
