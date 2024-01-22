@@ -7,7 +7,7 @@
 
 body {
   padding: 0;
-  background-color: #6F8FB7;
+  background-color: #DAA659;
 }
 
 .btn-primary {
@@ -26,8 +26,8 @@ body {
 }
 
 .btn-danger:hover {
-  background-color: #f72a1b;
-  border-color: #f72a1b;
+  background-color: #000;
+  border-color: #DAA659;
 }
 
 .btn-success {
