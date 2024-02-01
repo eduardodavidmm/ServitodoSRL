@@ -1,49 +1,19 @@
 <?php
-include('header-login.php');
-include('functions.php');
+	
+require_once "controllers/template.controller.php";
+require_once "controllers/users.controller.php";
+require_once "controllers/categories.controller.php";
+require_once "controllers/products.controller.php";
+require_once "controllers/customers.controller.php";
+require_once "controllers/sales.controller.php";
 
-?>
+require_once "models/users.model.php";
+require_once "models/categories.model.php";
+require_once "models/products.model.php";
+require_once "models/customers.model.php";
+require_once "models/sales.model.php";
 
-<div class="row vertical-offset-100">
-	<div id="response" class="alert alert-success" style="display:none;">
-		<a href="#" class="close" data-dismiss="alert">&times;</a>
-		<div class="message"></div>
-	</div>
+require_once "extensions/vendor/autoload.php";
 
-	<div class="col-md-4 col-md-offset-4">
-		<div class="panel panel-default login-panel">
-		  	<div class="panel-heading panel-login">
-		  		<h1 class="text-center">
-					<img src="<?php echo COMPANY_LOGO ?>" class="img-responsive">
-				</h1>
-		    	
-		 	</div>
-		  	<div class="panel-body">
-		    	<form accept-charset="UTF-8" role="form" method="post" id="login_form">
-		    		<input type="hidden" name="action" value="login">
-	                <fieldset>
-			    	  	<div class="input-group form-group">
-			    	  		<div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
-			    		    <input class="form-control required" name="username" id="username" type="text" placeholder="Usuario">
-			    		</div>
-			    		<div class="input-group form-group">
-			    		 	<div class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></div>
-			    			<input class="form-control required" placeholder="Password" name="password" type="password" placeholder="Contraseña">
-			    		</div>
-			    		<div class="checkbox">
-			    	    	<label>
-			    	    		<input name="remember" type="checkbox" value="Remember Me"> Recordar mi cuenta
-			    	    	</label>
-			    	    	<!--a href="forgot.php" class="float-right">Forgot password?</a-->
-			    	    </div>
-			    		<button type="button" id="btn-login" class="btn btn-danger btn-block">Ingresar</button><br>
-			    	</fieldset>
-		      	</form>
-		    </div>
-		</div>
-	</div>
-</div>
-
-<?php
-	include('footer.php');
-?>
+$template = new ControllerTemplate();
+$template -> ctrTemplate();
